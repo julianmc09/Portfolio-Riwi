@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title displayed in the page tab -->
+    <title>My Portafolio</title>
+    <meta name="description" content="Personal portafolio of Julian as a Riwi developer.">
+</head>
+<body>
+    <!-- First section with initial information and navigation menu to go to the different sections of the portafolio -->
+    <h1>Julian Morales Colorado - Riwi Developer</h1>
+    <!-- navigation menu -->
+    <nav>
+        <ul>
+            <li><a href="#about-me">About Me</a><br></li>
+            <li><a href="#projects">Projects</a><br></li>
+            <li><a href="#contact">Contact</a><br></li>
+            <li><a href="#social-networks">Social Networks</a></li>
+        </ul>
+    </nav>
+    <!-- Second section where a short presentation and skills are shown -->
+    <section>
+        <h2 id="about-me" title="Brief presentation">About Me</h2>
+        <p>Hello, I am <dfn>Julian <del>Morales</del> <del>Colorado</del></dfn>.</p>
+        <p>I am passionate about programming, constantly learning new languages <br> and developing good skills in each of those languages, in order to build <br>great projects.</p>
+        <details>
+            <summary>Hobbies</summary>
+            <p>I like bikes, I like motorcyles and I like videogames.</p>
+        </details>
+        <video width="320" height="240" controls>
+            <source src="./images/MyVideo.mp4" type="video/mp4">
+        </video>
+        <h2>Some music:</h2>
+        <audio controls>
+            <source src="./images/MyAudio.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+    <figure>
+    <img src="./images/905825d3-5d86-4c98-98c4-250f992ba32a.jpeg" alt="Julian's photo" width="160px" height="450px">
+    <figcaption>My photo</figcaption>
+    </figure>
+    <progress id="file" value="32" max="100"> 32% </progress>
+    <!-- List for skills -->
+    <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>HTML</li>
+    </ul>
+    <!-- Third section showing current projects -->
+    <section>
+        <h2 id="projects">Projects</h2>
+        <h3>Project 1: Portafolio Website</h3>
+        <p>This is my first project where I build a personal portafolio using only<mark> HTML</mark>.</p>
+        <img src="./images/HTML-sencillo.png" alt="Simple portafolio" width="270px" height="200px">
+        <h3>Project 2: Portafolio Website Advanced</h3>
+        <p>Here I continue with my portafolio, but now combining HTML and CSS.</p>
+        <img src="./images/HTML-AV.png" alt="Advanced Portafolio" width="270px" height="200px">
+        <!-- table with project information -->
+        <table border="1">
+            <colgroup>
+                <col span = "3" style="background-color: darkturquoise ;">
+            </colgroup>
+            <caption>Projects</caption>
+            <tr>
+                <th>Project Name</th>
+                <th>Technologies Used</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Portafolio Website</td>
+                <td>HTML</td>
+                <td><a href="http://127.0.0.1:5500/Portafolio_Julian_Morales.html">View Project</a></td>
+            </tr>
+            <tr>
+                <td>Portafolio Website Advanced</td>
+                <td>HTML and CSS</td>
+                <td>In progress</td>
+            </tr>
+        </table>
+    </section>
+<!-- Top of the footer -->
+<footer>
+    <!-- fourth contact section -->
+    <h1 id="contact">Contact</h1>
+        <form action="/send" method="post">
+        <fieldset>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" rows="2" required></textarea><br>
+
+        <input type="submit" value="Send">
+        </fieldset>
+    </form>
+    <!-- Links to go to social networks -->
+    <h1 id="social-networks">Social Networks</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/jmc___09/" target="_blank">Instagram</a> </li>
+        <li><a href="https://www.tiktok.com/@juliancoloraddo" target="_blank">TikTok</a></li>
+        <li><a href="https://github.com/julianmc09" target="_blank">GitHub</a></li>
+    </ul>
+</footer>
+</body>
+</html>
