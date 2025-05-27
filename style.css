@@ -1,7 +1,36 @@
-*{
-    padding: 0;
-    margin: 0;
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    align-content: justify;
 }
-body{
-    background: red;
+
+.profileImage{
+    display: flex;
+    justify-content: center;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    color:black;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+
+}
+
+.about{
+    display: flex;
+    justify-content:center
+
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
 }

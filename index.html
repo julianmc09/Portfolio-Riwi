@@ -6,32 +6,50 @@
     <!-- title displayed in the page tab -->
     <title>My Portafolio</title>
     <meta name="description" content="Personal portafolio of Julian as a Riwi developer.">
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <!-- First section with initial information and navigation menu to go to the different sections of the portafolio -->
-    <h1>Julian Morales Colorado - Riwi Developer</h1>
+<body style="background-color:powderblue;">
+    <!-- First section with initial information and navigation menu to go to the different sections of the portafolio -->  
+    <div class="name">
+        <h1>Julian Morales Colorado - Riwi Developer</h1>
+    </div>
+
+    <div class="profileImage">
+        <img src="./images/perfil.png" alt="Perfil" width="170px" height="170px">
+    </div>
     <!-- navigation menu -->
-    <nav>
-        <ul>
-            <li><a href="#about-me">About Me</a><br></li>
-            <li><a href="#projects">Projects</a><br></li>
-            <li><a href="#contact">Contact</a><br></li>
-            <li><a href="#social-networks">Social Networks</a></li>
-        </ul>
-    </nav>
+    <div class ="navigation">
+        <table border="1">
+            <colgroup>
+                <col span = "4" style="background-color:aquamarine ;">
+            </colgroup>
+            <nav>
+                <td><a href="#about-me">About Me</a><br></li></td>
+                <td><a href="#projects">Projects</a><br></li></td>
+                <td><a href="#contact">Contact</a><br></li></td>
+                <td><a href="#social-networks">Social Networks</a></li></td>
+            </nav>
+        </table>
+    </div>
     <!-- Second section where a short presentation and skills are shown -->
     <section>
-        <h2 id="about-me" title="Brief presentation">About Me</h2>
-        <p>Hello, I am <dfn>Julian <del>Morales</del> <del>Colorado</del></dfn>.</p>
-        <p>I am passionate about programming, constantly learning new languages <br> and developing good skills in each of those languages, in order to build <br>great projects.</p>
+        <div class="about">
+            <h2 id="about-me" title="Brief presentation">About Me</h2>
+        </div>
+        <div class="container">
+            <p>Hello, I am <dfn>Julian <del>Morales</del> <del>Colorado</del></dfn>. I am passionate about programming,<br>constantly learning new languages and developing good skills in each of those<br>languages, in order to build great projects.</p>
+        </div>
+        <div>
         <details>
             <summary>Hobbies</summary>
             <p>I like bikes, I like motorcyles and I like videogames.</p>
         </details>
-        <video width="320" height="240" controls>
-            <source src="./images/MyVideo.mp4" type="video/mp4">
-        </video>
-        <h2>Some music:</h2>
+        <div class="video">
+            <video width="320" height="240" controls>
+                <source src="./images/MyVideo.mp4" type="video/mp4">
+            </video>
+        </div>
+            <h2>Some music:</h2>
         <audio controls>
             <source src="./images/MyAudio.mp3" type="audio/mpeg">
         </audio>
