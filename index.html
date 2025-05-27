@@ -39,68 +39,87 @@
         <div class="container">
             <p>Hello, I am <dfn>Julian <del>Morales</del> <del>Colorado</del></dfn>. I am passionate about programming,<br>constantly learning new languages and developing good skills in each of those<br>languages, in order to build great projects.</p>
         </div>
-        <div>
-        <details>
-            <summary>Hobbies</summary>
-            <p>I like bikes, I like motorcyles and I like videogames.</p>
-        </details>
-        <div class="video">
-            <video width="320" height="240" controls>
+        <div class="hobbies">
+            <details>
+                <summary>Hobbies</summary>
+                <p>I like bikes, I like motorcyles and I like videogames.</p>
+            </details>
+        </div>
+            <div class="video">
+            <video width="300" height="200" controls>
                 <source src="./images/MyVideo.mp4" type="video/mp4">
             </video>
         </div>
+        <div class="audio">
             <h2>Some music:</h2>
-        <audio controls>
-            <source src="./images/MyAudio.mp3" type="audio/mpeg">
-        </audio>
+            <audio controls>
+                <source src="./images/MyAudio.mp3" type="audio/mpeg">
+            </audio>
+        </div>
     </section>
-    <figure>
-    <img src="./images/905825d3-5d86-4c98-98c4-250f992ba32a.jpeg" alt="Julian's photo" width="160px" height="450px">
-    <figcaption>My photo</figcaption>
-    </figure>
-    <progress id="file" value="32" max="100"> 32% </progress>
-    <!-- List for skills -->
-    <ul>
-        <li>Python</li>
-        <li>Java</li>
-        <li>HTML</li>
-    </ul>
+    <div class="image">
+        <figure>
+        <img src="./images/905825d3-5d86-4c98-98c4-250f992ba32a.jpeg" alt="Julian's photo" width="160px" height="380px">
+        <figcaption>My photo</figcaption>
+        </figure>
+    </div>
+    <div class="progress">
+        <progress id="file" value="32" max="100"> 32% </progress>
+    </div>    
+        <!-- List for skills -->
+    <div class="logs">
+        <img src="./images/python.jpg" alt="python" width="70px" height="70px">
+        <img src="./images/java.png" alt="Java" width="70px" height="70px">
+        <img src="./images/htmll.png" alt="HTML" width="70px" height="70px">
+    </div>
+
     <!-- Third section showing current projects -->
-    <section>
-        <h2 id="projects">Projects</h2>
-        <h3>Project 1: Portafolio Website</h3>
-        <p>This is my first project where I build a personal portafolio using only<mark> HTML</mark>.</p>
-        <img src="./images/HTML-sencillo.png" alt="Simple portafolio" width="270px" height="200px">
-        <h3>Project 2: Portafolio Website Advanced</h3>
-        <p>Here I continue with my portafolio, but now combining HTML and CSS.</p>
-        <img src="./images/HTML-AV.png" alt="Advanced Portafolio" width="270px" height="200px">
-        <!-- table with project information -->
-        <table border="1">
-            <colgroup>
-                <col span = "3" style="background-color: darkturquoise ;">
-            </colgroup>
-            <caption>Projects</caption>
-            <tr>
-                <th>Project Name</th>
-                <th>Technologies Used</th>
-                <th>Link</th>
-            </tr>
-            <tr>
-                <td>Portafolio Website</td>
-                <td>HTML</td>
-                <td><a href="http://127.0.0.1:5500/Portafolio_Julian_Morales.html">View Project</a></td>
-            </tr>
-            <tr>
-                <td>Portafolio Website Advanced</td>
-                <td>HTML and CSS</td>
-                <td>In progress</td>
-            </tr>
-        </table>
-    </section>
+    <div class="projects">
+        <section>
+            <div>
+            <h2 id="projects">Projects</h2>
+            <h3>Project 1: Portafolio Website</h3>
+            <p>This is my first project where I build a personal portafolio using only<mark> HTML</mark>.</p>
+            <div class="img1">
+                <img src="./images/HTML-sencillo.png" alt="Simple portafolio" width="270px" height="200px">
+            </div>
+            <h3>Project 2: Portafolio Website Advanced</h3>
+            <p>Here I continue with my portafolio, but now combining HTML and CSS.</p>
+            <div class="img2">
+                <img src="./images/HTML-AV.png" alt="Advanced Portafolio" width="270px" height="200px">
+            </div>
+            <!-- table with project information -->
+            <div class="table1">
+                <table border="1">
+                    <colgroup>
+                        <col span = "3" style="background-color: darkturquoise ;">
+                    </colgroup>
+                    <caption>Projects</caption>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Technologies Used</th>
+                        <th>Link</th>
+                    </tr>
+                    <tr>
+                        <td>Portafolio Website</td>
+                        <td>HTML</td>
+                        <td><a href="http://127.0.0.1:5500/Portafolio_Julian_Morales.html">View Project</a></td>
+                    </tr>
+                    <tr>
+                        <td>Portafolio Website Advanced</td>
+                        <td>HTML and CSS</td>
+                        <td>In progress</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </div>
 <!-- Top of the footer -->
 <footer>
     <!-- fourth contact section -->
-    <h1 id="contact">Contact</h1>
+     <div class="contact">
+        <h1 id="contact">Contact</h1>
+    </div>
         <form action="/send" method="post">
         <fieldset>
         <label for="name">Name:</label>
@@ -116,12 +135,14 @@
         </fieldset>
     </form>
     <!-- Links to go to social networks -->
-    <h1 id="social-networks">Social Networks</h1>
-    <ul>
-        <li><a href="https://www.instagram.com/jmc___09/" target="_blank">Instagram</a> </li>
-        <li><a href="https://www.tiktok.com/@juliancoloraddo" target="_blank">TikTok</a></li>
-        <li><a href="https://github.com/julianmc09" target="_blank">GitHub</a></li>
-    </ul>
+     <div class="social">
+        <h1 id="social-networks">Social Networks</h1>
+    </div>
+    <table border="1">
+        <td><a href="https://www.instagram.com/jmc___09/" target="_blank">Instagram</a></td>
+        <td><a href="https://www.tiktok.com/@juliancoloraddo" target="_blank">TikTok</a></td>
+        <td><a href="https://github.com/julianmc09" target="_blank">GitHub</a></td>
+    </table>
 </footer>
 </body>
 </html>

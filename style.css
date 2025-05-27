@@ -34,3 +34,60 @@
     justify-content: center;
     background-color: aquamarine;
 }
+
+.hobbies{
+    display: flex;
+    justify-content: center;
+}
+
+.audio{
+    display: flex;
+    justify-content: center;
+}
+
+.image{
+    display:flex;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.progress{
+    display: flex;
+    justify-content: center;
+}
+
+.logs{
+    display: flex;
+    justify-content: center;
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+}
+
+.img1{
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.img2{
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.table1{
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.contact{
+    background-color: aquamarine;
+}
+
+.social{
+    background-color: aquamarine;
+}
